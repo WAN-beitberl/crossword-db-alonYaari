@@ -1,0 +1,16 @@
+Homework 30.10.22 - Alon Yaari
+1. In my opinion, the information is stored in some tables:
+	1. The first one is contains all the ID's of the puzzles, and the ID's off all the clues that apears in the puzlle.
+	2. The Second is contains the Id's of all the words that are the clues in the site. in adittion,for every clue it will save the ID off his answer.
+	3. The Table is the answers table. Including a primary key, the answer, and its length.
+
+ 2. In my opinion, the information that is'nt stored on a table is:
+	1. weather the answer is horizental or vertical on the puzzle.
+	2. The place on the matrix that the user is on.
+	3. The position of the clue on the puzzle.
+	4. The score of the player will not be sotred as well.
+	5. The input of the user. Although It will be compared with the answers table. 
+
+4. sqlite> CREATE TABLE clues (ID INTEGER PRIMARY KEY, value text, answerID INTEGER);
+    sqlite> CREATE TABLE answers (ID INTEGER PRIMARY KEY, value text, length INTEGER);
+    CREATE TABLE Puzzles (ID INTEGER, clueID INTEGER, PRIMARY KEY(ID, clueID));
