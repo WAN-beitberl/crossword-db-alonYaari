@@ -11,6 +11,6 @@ Homework 30.10.22 - Alon Yaari
 	4. The score of the player will not be sotred as well.
 	5. The input of the user. Although It will be compared with the answers table. 
 
-4. sqlite> CREATE TABLE clues (ID INTEGER PRIMARY KEY, value text, answerID INTEGER);
+4.  sqlite> CREATE TABLE clues (ID INTEGER PRIMARY KEY, value text, answerID INTEGER);
     sqlite> CREATE TABLE answers (ID INTEGER PRIMARY KEY, value text, length INTEGER);
     CREATE TABLE Puzzles (ID INTEGER, clueID INTEGER, PRIMARY KEY(ID, clueID));
